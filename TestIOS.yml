@@ -1,0 +1,42 @@
+---
+
+- name: Test IOS Commands
+  hosts: all
+  connection: local
+  gather_facts: no
+
+
+  vars:
+    creds:
+      host: "{{ ansible_host }}"
+      username: victor
+      password: aceking305
+      authorize: yes
+      transport: cli
+
+  tasks:
+    - ios_command:
+          commands: show version
+          host: "{{ ansible_host }}"
+          username: victor
+          password: aceking305
+
+  tasks:
+    - ios_command:
+          commands: show ip route
+          host: "{{ ansible_host }}"
+          username: victor
+          password: aceking305
+  tasks:
+    - ios_command:
+          commands: show run
+          host: "{{ ansible_host }}"
+          username: victor
+          password: aceking305
+
+  tasks:
+    - ios_command:
+          commands: show log
+          host: "{{ ansible_host }}"
+          username: victor
+          password: aceking305
