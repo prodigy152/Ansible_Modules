@@ -10,7 +10,7 @@
     creds:
       host: "{{ ansible_host }}"
       username: victor
-      password: aceking305
+      password: xxxx
       authorize: yes
       transport: cli
 
@@ -19,24 +19,24 @@
           commands: show version
           host: "{{ ansible_host }}"
           username: victor
-          password: aceking305
+          password: xxxx
 
   tasks:
     - ios_command:
           commands: show ip route
           host: "{{ ansible_host }}"
           username: victor
-          password: aceking305
+          password: xxxx
   tasks:
     - ios_command:
           commands: show run
           host: "{{ ansible_host }}"
           username: victor
-          password: aceking305
+          password: xxxx
 
   tasks:
     - ios_command:
           commands: show log
           host: "{{ ansible_host }}"
           username: victor
-          password: aceking305
+          password: xxxx
