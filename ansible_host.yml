@@ -1,4 +1,4 @@
 [all:vars]
-# OSX / Homebrew hack, as I have python3 installed.
+
 [ios_devices]
 10.0.0.130
